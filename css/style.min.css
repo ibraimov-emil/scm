@@ -158,6 +158,61 @@
 
 }
 
+/* search-form */
+.search-form {
+    text-align: start;
+    max-width: 306px;
+}
+
+.search-form__btn2 {
+    display: none;
+}
+
+.search-form__item {}
+
+.search-form__btn {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-right: 12px;
+}
+
+.search-call {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 150px;
+}
+
+.search-form__input {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 110%;
+    /* or 14px */
+    width: 80%;
+
+    color: #FFFFFF;
+
+    opacity: 0.5;
+}
+
+.phone-info {
+    margin-right: 82px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
 
 /* title fonts style */
 .title {
@@ -189,7 +244,8 @@
     font-style: normal;
 }
 
-.menu-button-text, .menu-text {
+.menu-button-text,
+.menu-text {
     font-family: 'Muller';
     font-style: normal;
     font-weight: 500;
