@@ -1,0 +1,210 @@
+@font-face {
+    font-family: "Muller";
+    src: url("fonts/MullerRegular.woff") format('woff');
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: "Muller";
+    src: url("fonts/MullerMedium.woff") format('woff');
+    font-style: medium;
+} */
+
+/* @font-face {
+    font-family: "Muller";
+    src: url("fonts/MullerExtraBold.woff") format('woff');
+    font-style: bolder;
+}
+
+@font-face {
+    font-family: "Muller";
+    src: url("fonts/MullerBold.woff") format('woff');
+    font-style: bold;
+} */
+
+.detailed {
+    display: flex;
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 22px;
+
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+
+    width: 306px;
+    height: 60px;
+
+    border: 2px solid #FFFFFF;
+    color: white;
+    background: none;
+}
+
+@media only screen and (max-width: 576px) {
+    .button {
+        width: 196px;
+        height: 43px;
+        font-size: 13px;
+    }
+}
+
+
+.info-block__image {}
+
+.info-block__image img {
+    width: calc(624px + (800 - 624) * ((100vw - 576px) / (1400 - 576)));
+}
+
+.detailed__image img {
+    width: 597px;
+    margin-right: 107px;
+}
+
+.info-block__description {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.description_size1 {
+    width: 494px;
+}
+
+.description_size2 {
+    width: calc(321px + (398 - 321) * ((100vw - 576px) / (1400 - 576)));
+}
+
+@media only screen and (max-width: 1060px) {
+    .detailed {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .detailed__image {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .info-block__description {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .description_size1 {
+        width: 307px;
+    }
+
+    .description_size2 {
+        width: 321px;
+    }
+
+}
+
+/* .advantages */
+.advantages__line {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.advantages__advantage {
+    display: flex;
+}
+
+.advantages__advantage_image {
+    margin-right: 20px;
+}
+
+.advantages_advantage__description {
+    width: 435px;
+}
+
+.advantages__advantage_second {
+    margin-left: 115px;
+}
+
+@media only screen and (max-width: 1060px) {
+    .advantages__advantage {
+        margin-bottom: 40px;
+    }
+
+    .advantages__line {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .advantages__advantage_second {
+        margin-left: 0px;
+    }
+
+}
+
+
+/* title fonts style */
+.title {
+    font-family: 'Muller';
+    font-weight: 500;
+    /* font-style: bold; */
+    font-size: 50px;
+    line-height: 50px;
+    text-align: start;
+
+    color: #FFFFFF;
+}
+
+.description {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: start;
+    line-height: 110%;
+    /* or 22px */
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.sliding-menu a,
+.nav-title span {
+    font-family: 'Muller';
+    font-style: normal;
+}
+
+.menu-button-text, .menu-text {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    /* line-height: 110%; */
+}
+
+@media only screen and (max-width: 576px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+/* title fonts style */

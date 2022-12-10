@@ -211,7 +211,7 @@ function initScript() {
             var scsc = $(".det-carousel .swiper-slide.swiper-slide-active").data("curtext"),
                 $captproject = $(".det-carousel-title  h4");
 
-            $captproject.text(scsc).shuffleLetters({});
+            $captproject.text(scsc);
         });
         j4.on('slideChange', function () {
             var csli = j4.realIndex + 1,
@@ -644,7 +644,7 @@ function initScript() {
                 }, 900);
 
                 if ($grid > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) $(".filt-text span").text(dt2);
-                else $(".filt-text  span").text(dt2).shuffleLetters({});
+                else $(".filt-text  span").text(dt2);
                 $(".gallery-filters a").removeClass("gallery-filter-active");
                 $(this).addClass("gallery-filter-active");
                 setTimeout(function () {
@@ -749,7 +749,7 @@ function initScript() {
                     $(".gallery-filters a").removeClass("gallery-filter-active");
                     $(this).addClass("gallery-filter-active");
                     if (f > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) $(".filt-text span").text(dt);
-                    else $(".filt-text  span").text(dt).shuffleLetters({});
+                    else $(".filt-text  span").text(dt);
                 });
                 d.isotope("on", "layoutComplete", function (a, b) {
                     var b = a.length,
@@ -1274,9 +1274,6 @@ function initScript() {
         });
         nhw.removeClass("but-hol");
         nbw.addClass("cmenu");
-        setTimeout(function () {
-            $(".nav-title span").shuffleLetters({});
-        }, 950);
     }
 
     function hideMenu() {
@@ -1302,11 +1299,11 @@ function initScript() {
     nho.on("click", function () {
         hideMenu();
     });
-    $(".sliding-menu a  , .grid-det-item a ").on({
-        mouseenter: function () {
-            $(this).shuffleLetters({});
-        }
-    });
+    // $(".sliding-menu a  , .grid-det-item a ").on({
+    //     mouseenter: function () {
+    //         $(this).shuffleLetters({});
+    //     }
+    // });
 	//   Contact form------------------
     var coninw = $(".contact-form-content"),
         coninbtn = $(".contact-form-btn");
@@ -1430,10 +1427,10 @@ function contentAnimShow() {
 
 function contentAnimHide() {
     var chdpt = $(".content").data("pagetitle");
-    $(".page-subtitle span").text(chdpt).shuffleLetters({
-        step: 14,
-        fps: 25
-    });
+    // $(".page-subtitle span").text(chdpt).shuffleLetters({
+    //     step: 14,
+    //     fps: 25
+    // });
     $(".pl-spinner").addClass("act-loader");
     setTimeout(function () {
         $(".pl-spinner").removeClass("act-loader");
