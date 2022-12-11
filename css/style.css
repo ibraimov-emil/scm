@@ -6811,7 +6811,7 @@ section {
 	}
 }
 
-@media only screen and (max-width: 1064px) {
+@media only screen and (max-width: 1200px) {
 	.main-header {
 		width: 100%;
 	}
