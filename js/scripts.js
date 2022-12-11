@@ -365,6 +365,38 @@ function initScript() {
             }
         });
     }
+    // if ($(".product-slider")) {
+    //     var totalSlides2 = $(".product-slider .swiper-slide").length;
+    //     var gridCarusel = new Swiper(".product-slider .swiper-container", {
+    //         preloadImages: true,
+    //         loop: true,
+    //         centeredSlides: true,
+    //         freeMode: false,
+    //         slidesPerView: 2,
+    //         spaceBetween: 10,
+    //         grabCursor: true,
+    //         mousewheel: false,
+    //         parallax: true,
+    //         speed: 1400,
+    //         navigation: {
+    //             nextEl: '.gc-slider-cont-next',
+    //             prevEl: '.gc-slider-cont-prev',
+    //         },
+    //         pagination: {
+    //             el: '.grid-carousel_pagination',
+    //             clickable: true,
+    //         },
+    //         breakpoints: {
+    //             768: {
+    //                 slidesPerView: 2,
+    //             },
+    //             640: {
+    //                 slidesPerView: 1,
+
+    //             },
+    //         }
+    //     });
+    // }
     if ($(".grid-carousel2").length > 0) {
         var j2 = new Swiper(".grid-carousel2 .swiper-container", {
             preloadImages: false,
