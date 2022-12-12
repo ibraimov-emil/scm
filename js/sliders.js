@@ -16,6 +16,7 @@ new Swiper('.product-slider', {
 
         900: {
             slidesPerView: 1.4,
+
         },
         1000: {
             slidesPerView: 1.7,
@@ -23,10 +24,12 @@ new Swiper('.product-slider', {
         // when window width is >= 640px
         1200: {
             slidesPerView: 2.1,
+
         },
 
         1400: {
             slidesPerView: 2.5,
+
         },
 
         1600: {

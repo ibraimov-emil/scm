@@ -473,7 +473,7 @@ blockquote p {
 	left: 0;
 	width: 90px;
 	bottom: 0;
-    background-color: rgba(34, 34, 34, 0.8);
+	background-color: rgba(34, 34, 34, 0.8);
 	z-index: 20;
 	padding: 0 90px 0 0;
 	transition: all 300ms linear;
@@ -499,12 +499,12 @@ blockquote p {
 	position: fixed;
 	top: 0;
 	display: flex;
-    align-items: center;
+	align-items: center;
 	left: 90px;
 	width: 100%;
 	height: 90px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    background-color: rgba(34, 34, 34, 0.8);
+	background-color: rgba(34, 34, 34, 0.8);
 	z-index: 19;
 }
 
@@ -512,8 +512,9 @@ blockquote p {
 	position: absolute;
 	right: 50%;
 	width: 1px;
-    height: 46vh;
-    top: 27vh;;
+	height: 46vh;
+	top: 27vh;
+	;
 	background: rgba(255, 255, 255, 0.2);
 	overflow: hidden;
 }
@@ -577,7 +578,7 @@ blockquote p {
 	top: 50%;
 	width: 30px;
 	height: 1px;
-	background: #fff !important ;
+	background: #fff !important;
 }
 
 .page-subtitle-active:before {
@@ -1148,6 +1149,7 @@ nav.nav-inner {
 	background: #1B1B1B;
 }
 
+/* 
 .main-footer:before {
 	content: '';
 	position: absolute;
@@ -1157,7 +1159,7 @@ nav.nav-inner {
 	width: 50%;
 	background: #222;
 	z-index: 2;
-}
+} */
 
 .footer-decor {
 	position: absolute;
@@ -1592,6 +1594,8 @@ nav.nav-inner {
 .page-scroll-nav,
 .services-nav {
 	top: 34px;
+	display: flex;
+    justify-content: center;
 }
 
 .page-scroll-nav li,
@@ -1603,13 +1607,20 @@ nav.nav-inner {
 .page-scroll-nav li a,
 .services-nav li a {
 	float: left;
-	font-size: 10px;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+	font-family: 'Muller';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 16px;
+	/* identical to box height */
+
+
+	color: #FFFFFF;
+
+	opacity: 0.8;
 	color: #8B8B8B;
 	position: relative;
-	padding-left: 40px;
+	padding-left: 33px;
 }
 
 .page-scroll-nav li a:after,
@@ -1668,7 +1679,7 @@ nav.nav-inner {
 }
 
 .column-wrap-container section {
-	padding: 100px 0;
+	padding: 70px 0;
 }
 
 .column-wrap-container section.sc_padd {
@@ -6911,7 +6922,7 @@ section {
 	}
 
 	.column-wrap-container section {
-		padding: 60px 0;
+		padding: 50px 0;
 	}
 
 	.nav-holder,

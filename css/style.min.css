@@ -84,7 +84,8 @@
 .info-block__image {}
 
 .info-block__image img {
-    width: calc(624px + (800 - 624) * ((100vw - 576px) / (1400 - 576)));
+    /* width: calc(624px + (1251 - 624) * ((100vw - 576px) / (1400 - 576))); */
+    width: auto;
 }
 
 .detailed__image img {
@@ -108,7 +109,6 @@
 
 .send-request__form {
     display: flex;
-    position: absolute;
 }
 
 .send-request__input::placeholder {
@@ -283,6 +283,44 @@
 }
 
 /* title fonts style */
+
+.main-title-header {
+    display: flex;
+    align-items: center;
+}
+
+.main-title {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 80px;
+    color: #FFFFFF;
+    z-index: 50;
+    margin-left: calc(158px + (272 - 158) * ((100vw - 768px) / (1400 - 768)));
+    text-align: start;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-title {
+        margin-left: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .main-title {
+        margin-left: 15px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+}
+
+.main-titlle-color {
+    color: #FFB800;
+}
+
 .title {
     font-family: 'Muller';
     font-weight: 500;
@@ -408,6 +446,7 @@
     text-align: start;
     margin-left: 40px;
     margin-bottom: 34px;
+    width: 200px;
 }
 
 .product-card__button {
@@ -461,3 +500,122 @@
         margin: auto 10px;
     }
 }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_contact {
+    /* display: flex; */
+    text-align: start;
+
+}
+
+.footer_contact__title {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.footer_contact__description {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+
+.footer-contact__middle {
+    margin-top: 14px;
+    margin-bottom: 25px;
+    width: 180px;
+}
+
+.footer_contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_copiright_text {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+
+    opacity: 0.5;
+    width: 200px;
+    text-align: start;
+}
+
+.footer_copiriight_text-wk {
+    width: 138px !important;
+}
+
+.footer-inner .row {
+    display: flex;
+    align-items: end;
+}
+
+@media only screen and (max-width: 1060px) {
+    .footer_contact {
+        margin-bottom: 50px;
+    }
+
+    .footer-inner .row {
+        display: block;
+    }
+
+    .footer_copiright {
+        display: flex;
+    }
+
+    .footer_copiright-middle {
+        margin-bottom: 80px;
+        display: flex;
+    }
+
+    .footer_copiright_text {
+        width: auto !important;
+    }
+
+    .footer_copiriight_text-wk {
+        width: auto !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .footer_copiright-middle {
+        margin-bottom: 80px;
+        display: block;
+    }
+
+    .footer_copiright_text {
+        width: 223px;
+    }
+}
+
+.swiper-backface-hidden .swiper-slide {
+    /* width: auto !important; */
+}
+
+/* <div class="footer">
+<div class="footer_contact">
+    <div class="footer_contact__title">
+        Санкт-Петербург:
+    </div>
+    <div class="footer_contact__description">пер. Подъездной, д. 18,литера В, помещ. 200
+    </div>
+    <div class="footer_contact__description">8(812) 380-85-00</div>
+</div>
+</div>
+</div> */
